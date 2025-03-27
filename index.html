@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Babiflor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto Mono", monospace;
+        font-optical-sizing: auto;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        min-height: 100lvh;
+        background-color: #e4302e;
+      }
+
+      .container {
+        max-width: 50%;
+        margin: 0 auto;
+      }
+
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .congrats_card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        padding: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 6px;
+        letter-spacing: 10px;
+        color: #99211f;
+        position: relative;
+        overflow: hidden;
+        box-shadow: inset 0 0 0px 6px #610b0b;
+      }
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .title img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 12px;
+      }
+
+      .congrats_card span:first-of-type {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to right, transparent, #ffee00);
+        animation: animate1 2s linear infinite;
+      }
+
+      .congrats_card span:nth-of-type(2) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to bottom, transparent, #ffee00);
+        animation: animate3 2s linear infinite;
+        animation-delay: 1s;
+      }
+
+      .congrats_card span:nth-of-type(3) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(to left, transparent, #ffee00);
+        animation: animate2 2s linear infinite;
+      }
+
+      .congrats_card span:nth-of-type(4) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        background: linear-gradient(to top, transparent, #ffee00);
+        animation: animate4 2s linear infinite;
+        animation-delay: 1s;
+      }
+
+      @keyframes animate1 {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+
+      @keyframes animate2 {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      @keyframes animate3 {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(100%);
+        }
+      }
+
+      @keyframes animate4 {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(-100%);
+        }
+      }
+
+      h1 {
+        font-size: 3.2rem;
+      }
+
+      h1 b {
+        font-size: 4.6rem;
+      }
+
+      .couple_container {
+        width: 50%;
+
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .couple_container img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 12px;
+      }
+
+      .inverted {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="congrats_card">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="title">
+          <img src="./img/1.png" alt="" srcset="" />
+          <img src="./img/2.png" alt="" srcset="" />
+          <img src="./img/3.png" alt="" srcset="" />
+        </div>
+      </div>
+      <div class="couple_container">
+        <img
+          src="./img/5caf0b9f6360603267a4dbd4314440e5-removebg-preview.png"
+          alt=""
+          srcset=""
+        />
+        <img src="./img/20250315_175941.jpg" alt="" srcset="" class="couple" />
+        <img
+          src="./img/5caf0b9f6360603267a4dbd4314440e5-removebg-preview.png"
+          alt=""
+          srcset=""
+          class="inverted"
+        />
+      </div>
+      <h1>TE AMO INFINITO ^ INFINITO</h1>
+      <iframe
+        id="teste"
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/track/6TRp2628QKH3kY6KrCnjqp?utm_source=generator"
+        width="100%"
+        height="124"
+        autoplay="true"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </main>
+  </body>
+</html>
